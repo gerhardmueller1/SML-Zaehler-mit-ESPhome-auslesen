@@ -75,7 +75,7 @@ beschrieben wurde.
 
 Gemäß den *Vorrednern* weiß ich, dass ich den Freiscahltcode bei meinen Stadtwerken beantragen muss. Nichts einfacher als das, Mail an meine Stadtwerke. Ganze *drei
 Minuten* hat es gedauert bis die Antwort per Mail kam. Das war das einzige, was Problemlos lief; Danke an meine
-[Stadtwerke](https://www.stadtwerke-elmshorn.de/de/Privatkunden/Netze/Stromnetz/Stromnetz-Relaunch/Messstellenbetrieb/DZG-DWS74-Kurzanleitung.pdf).
+[Stadtwerke](https://www.stadtwerke-elmshorn.de/).
 
 Auf zum Zähler, Code eingeben und schon wird der Aktuelle Verbrauch auch im Display des Zählers angezeigt. Super, zurück am PC schaue ich mir das OBIS-Log an. Ernüchterung;
 keine weiteren Daten. Die [Kurzanleitung](https://www.stadtwerke-elmshorn.de/de/Privatkunden/Netze/Stromnetz/Stromnetz-Relaunch/Messstellenbetrieb/DZG-DWS74-Kurzanleitung.pdf)
