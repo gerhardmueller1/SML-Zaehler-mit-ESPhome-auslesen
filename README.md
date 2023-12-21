@@ -105,7 +105,8 @@ Code | Beschreibung
 1-0:96.1.0 | Seriennummer
 1-0:16.7.0 | aktueller Verbrauch
 
-*Anmerkung*: die Seriennummer kann nicht direkt als `text_sensor` ausgelesen werden. Das erste Byte ist numerisch, Bytes 2-4 ergeben den String "DZG", der Rest ist die weitere Seriennummer
+*Anmerkung*: die Seriennummer kann nicht direkt als `text_sensor` ausgelesen werden. Das erste Byte ist numerisch (bzw. müsste per Hex2Int umgewandelt werden), Bytes 2-4 ergeben den String "DZG" (Hex2String), der Rest ist die weitere Seriennummer (hex2Int). Das habe ich mir erspart, zumal sich die Nummer nie ändern wird und in der Heimautomatisierung keinen
+wirklichen Nutzen hat.
 
 ## mein YAML-Code
 
