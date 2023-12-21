@@ -35,7 +35,7 @@ In Sachen "Smart-Home-Harware selbst bauen" bin ich daher -ich sage es mal so- u
 Arbeit passt das dann auch ins eigene Universum. Beim Stromzähler kam ich dann aber an Grenzen. Knappe 100€ für einen fertigen Zähler (z.B. Powerfox oder Tibber Pulse)
 war mir dann doch zu viel. Bei der Suche nach weiteren Möglichkeiten ist mir dann der [Volkszähler](https://wiki.volkszaehler.org/hardware/controllers/ir-schreib-lesekopf)
 unter gekommen, so dass ich beschloss es mal damit zu probieren. Da hat mich der Ergeiz gepackt und ich wollte versuchen das Gerät dann eben selbst zu bauen. Daher habe ich,
-statt des fertigen Gerätes für ca. 50€, nur den IR-Schreib-Lesekopf bestellt, zumal ich ja noch ein paar Microcontroller hatte. Kostenpunkt hierfür liegt bei knapp 20€.
+statt des fertigen Gerätes für ca. 50€, nur den IR-Schreib-Lesekopf bestellt, zumal ich ja noch ein paar Microcontroller hatte. Kostenpunkt hierfür lag bei knapp 20€.
 
 ## erste Versuche
 
@@ -66,7 +66,7 @@ NodeMCU hin stecke, entweder der IR-Kopf von der Leseposition abfällt oder sich
 stabil ist. Zurück an den PC und -Enttäuschung- keine Daten!
 
 Nachdem ich dann Alles mehrfach durchgespielt habe, erkenne ich die farblichen Unterschiede von IR-Sende- und Lese-Kopf. Ebenso sind die Dioden am Zähler unterschiedlich.
-Den IR-Kopf "*auf den Kopf gestellt*" und schon trudeln die ersten Daten ein. Ohne aktuellen Verbrauch, aber das ahnte ich ja schon, da das in den diversen Seiten schon
+Den IR-Kopf "*auf den Kopf gestellt*" und schon trudeln die ersten Daten ein; ohne aktuellen Verbrauch, aber das ahnte ich ja schon, da das in den diversen Seiten schon
 beschrieben wurde.
 
 ![Installation IR-Kopf](IR-Kopf.jpg)
@@ -78,9 +78,11 @@ Minuten* hat es gedauert bis die Antwort per Mail kam. Das war das einzige, was 
 [Stadtwerke](https://www.stadtwerke-elmshorn.de/de/Privatkunden/Netze/Stromnetz/Stromnetz-Relaunch/Messstellenbetrieb/DZG-DWS74-Kurzanleitung.pdf).
 
 Auf zum Zähler, Code eingeben und schon wird der Aktuelle Verbrauch auch im Display des Zählers angezeigt. Super, zurück am PC schaue ich mir das OBIS-Log an. Ernüchterung;
-keine weiteren Daten. Die Bedienungsanleitung des Stromzählers gibt leider nicht viel her. Vermute, dass irgendwas am Zähler noch eingerichtet werden muss, aber was. Beim weiteren  Suchen finde ich die Kurzanleitung zu meinem Zähler haufenweise. Irgendwann stoße ich auf das Dokument
-["Freischaltung der D0-Schnittstelle"](https://shop.weidmann-elektronik.de/media/files_public/ef65a5f91f3dabc8252faaababd91b30/Freischaltung_D0_Schnittstelle.pdf).
-Zurück zum Zähler, PIN erneut eingeben, Durchklicken bis <Inf> im Display erschein, aktivieren.
+keine weiteren Daten. Die [Kurzanleitung](https://www.stadtwerke-elmshorn.de/de/Privatkunden/Netze/Stromnetz/Stromnetz-Relaunch/Messstellenbetrieb/DZG-DWS74-Kurzanleitung.pdf)
+des Stromzählers gibt leider nicht viel her. In der Kurzanleitung ist keine Beschreibung der Bedienung und der einzelnen "Menü"-Punkte enthalten.
+Beim weiteren Suchen finde ich diese Kurzanleitung zu Hauf'. Irgendwann stoße ich dann aber doch auf das Dokument
+["Freischaltung der D0-Schnittstelle"](https://shop.weidmann-elektronik.de/media/files_public/ef65a5f91f3dabc8252faaababd91b30/Freischaltung_D0_Schnittstelle.pdf). :-)
+Zurück zum Zähler, PIN erneut eingeben, Durchklicken bis `Inf` im Display erscheint, aktivieren.
 
 Endlich läuft alles! Die Daten werden zuerst noch etwas falsch berechnet, aber mit etwas Anpassung am YAML werden nun auch die Kommastellen korrekt berechnet!
 
@@ -102,7 +104,7 @@ Code | Beschreibung
 1-0:96.1.0 | Seriennummer
 1-0:16.7.0 | aktueller Verbrauch
 
-*Anmerkung*: die Seriennummer kann nicht direkt als <text_sensor> ausgelesen werden. Das erste Byte ist numerisch, Bytes 2-4 ergeben den String "DZG", der Rest ist die weitere Seriennummer
+*Anmerkung*: die Seriennummer kann nicht direkt als `text_sensor` ausgelesen werden. Das erste Byte ist numerisch, Bytes 2-4 ergeben den String "DZG", der Rest ist die weitere Seriennummer
 
 ## mein YAML-Code
 
