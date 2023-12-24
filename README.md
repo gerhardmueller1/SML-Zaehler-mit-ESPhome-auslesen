@@ -90,7 +90,8 @@ Endlich läuft alles! Die Daten werden zuerst noch etwas falsch berechnet, aber 
 
 ## Schlußbemerkung
 
-Für den Betrieb habe ich mir jetzt statt eines NodeMCU-Boards einen D1-Mini besorgt. Unten ist noch das YAML meines Entwicklungs-Boards drin, aber die Passworte und Keys
+Für den Betrieb habe ich mir jetzt statt eines NodeMCU-Boards einen D1-Mini besorgt und statt der Powerbank ein passendes Netzteil in der Nähe des Zählers mit einem langen USB-Kabel angeschlossen.
+Unten ist noch das YAML meines Entwicklungs-Boards drin, aber die Passworte und Keys
 dürft ihr gerne haben!!
 
 # Daten
