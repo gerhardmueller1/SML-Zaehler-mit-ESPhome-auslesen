@@ -28,7 +28,7 @@ In meiner Home-Assistant-Installation habe ich bereits einige ESPHome-Geräte (m
 Balkon-Kraftwerks möchte ich nun auch die Werte meines Stromzählers auslesen.
 
 All meine anderen Geräte habe ich als Fertig-Gerät gekauft und nach Anleitung mit Tasmota bzw. ESPHome geflasht. Vor laaaanger Zeit hatte ich mal
-ein wenig mit Elektronik-rumgebastelle auf einem Breadboard, mit blinkenden LEDs, Microcontrollern (darunter auch einige ESP8266 sowie einem ESP32 auf einen
+ein wenig mit Elektronik-rumgebastelle auf einem Breadboard, mit blinkenden LEDs, Microcontrollern (darunter auch einige ESP8266 sowie einem auf einem
 NodeMCU-Board, etc) begonnen, aber dann wieder aufgehört. Das ganze Zeug flog noch in einer Kiste rum und daher kam mir die Idee den Stromzähler mal selbst zu bauen.
 Anleitungen etc. sollte es ja wohl genügend geben :-)
 In Sachen "Smart-Home-Harware selbst bauen" bin ich daher -ich sage es mal so- unerfahren. WiFi-Steckdosen, etc gibt es ja schon für kleines Geld und mit ein wenig
@@ -43,7 +43,7 @@ Für die ersten Versuche habe ich die ESP8266 verwendet. Per FT232 USB-TTL-Seria
 FT232 angeschlossen war. Sobald ich aber die Stromversorgung umgestellt habe und über das Breadboard versorge, fährt der ESP8266 nicht mehr hoch. Meine eigentliche Idee,
 den Stromleser mit einer Batterie zu betreiben ist damit hinfällig.
 
-# Einrichtung des Node-MCU / ESP 32
+# Einrichtung des Node-MCU / ESP 12 F
 
 Homeassistant und ESPHome machen es einem ja sehr leicht neue Geräte zu flashen. Den NodeMCU gepackt per USB-Kabel an meine PC gesteckt, ein neues Gerät eingerichtet,
 flashen, fertig; Das Gerät in einer einfachen Konfiguration ist damit ja schon mal betriebsbereit, kann zwar noch nix, aber der Rest ist ja nur ein bischen YAML aus den
